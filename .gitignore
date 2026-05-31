@@ -1,3 +1,31 @@
+# Rust language
+/target/
+/debug/
+**/*.rs.bk
+*.pdb
+
+# ENV
+.env
+.env.local
+.env.*.local
+
+# build
+*.app/
+*.dmg
+*.dmg.temp
+*.exe
+*.msi
+*.deb
+*.rpm
+
+# IDE
+.idea/
+.zed/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
 # Logs
 logs
 *.log
@@ -7,22 +35,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# OS temp files
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+# Windows
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+# Linux
+.directory
+
+# Projects
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
-
-# plugins
-auto-imports.d.ts
-components.d.ts

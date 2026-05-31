@@ -1,7 +1,7 @@
 # ntp-toolbox
 
 <div align="center">
-  <img src="./public/logo.png" alt="Logo" width="160">
+  <img src="./assets/icon.ico" alt="Logo" width="160">
   <h1 align="center">NTP ToolBox: ntp check and serving</h1>
 </div>
 
@@ -16,42 +16,29 @@ Currently, only Windows is supported, Linux and macOS will be supported in the f
 
 Distributed under the Apache License. See [`LICENSE`](./LICENSE) for more information.
 
-## 📝 Build & Development
+## 📝 Development & Build
 
-### Requirements
+### Development Stack
 
-Rust >= 1.82.0
+- [Rust](https://rust-lang.org) A language empowering everyone to build reliable and efficient software.
+- [gpui](https://www.gpui.rs) A fast, productive UI framework for Rust from the creators of Zed.
+- [gpui-component](https://longbridge.github.io/gpui-component) Rust GUI components for building fantastic
+  cross-platform desktop application by using GPUI.
+- [rsntp](https://github.com/mlichvar/rsntp) High-performance NTP server written in Rust.
 
-Node.js >= 18.0.0
-
-pnpm >= 8.5.0
-
-### Start compilation
+### Build Project
 
 1. Clone the repository
     ```bash
     git clone https://github.com/humbinal/ntp-toolbox.git
     ```
 
-2. Install dependencies
+2. Run
     ```bash
-    cd ntp-toolbox
-    pnpm install
+    cargo run
     ```
 
-3. Development (Optional)
+3. Build
     ```bash
-    pnpm tauri dev # Run the app in development mode
+    cargo build --release
     ```
-
-4. Build
-    ```bash
-    pnpm tauri build # Build into installation package
-    ```
-
-## 📚Acknowledgement
-
-- [Tauri](https://tauri.app/) A user-friendly GUI framework.
-- [Vue.js](https://vuejs.org/) The Progressive JavaScript Framework.
-- [Element Plus](https://element-plus.org/) A Vue 3 based component library.
-- [rsntp](https://github.com/mlichvar/rsntp) High-performance NTP server written in Rust.

@@ -1,0 +1,22 @@
+[package]
+name = "ntp-toolbox"
+version = "0.3.0"
+edition = "2024"
+
+[profile.release]
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = true
+
+[dependencies]
+gpui = { git = "https://github.com/zed-industries/zed" }
+gpui_platform = { git = "https://github.com/zed-industries/zed", features = ["font-kit", "runtime_shaders"] }
+gpui-component = { git = "https://github.com/longbridge/gpui-component" }
+chrono = { version = "0.4.44", features = ["std"] }
+byteorder = { version = "1.5.0" }
+rsntp = { version = "4.1.1" }
+
+[build-dependencies]
+winresource = "0.1.31"
